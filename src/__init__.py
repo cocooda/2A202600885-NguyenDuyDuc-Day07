@@ -17,6 +17,12 @@ from .embeddings import (
 )
 from .models import Document
 from .store import EmbeddingStore
+from .strategy import (
+    ACADEMIC_POLICY_FILES,
+    ArticleSectionChunker,
+    VietnameseTextEmbedder,
+    build_academic_policy_documents,
+)
 
 __all__ = [
     "Document",
@@ -34,4 +40,8 @@ __all__ = [
     "LOCAL_EMBEDDING_MODEL",
     "OPENAI_EMBEDDING_MODEL",
     "EMBEDDING_PROVIDER_ENV",
+    "ArticleSectionChunker",
+    "VietnameseTextEmbedder",
+    "build_academic_policy_documents",
+    "ACADEMIC_POLICY_FILES",
 ]
